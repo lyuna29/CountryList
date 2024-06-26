@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { fetchCountries } from "../api/api";
 import { Country } from "../types/countries";
 import CountryCard from "./CountryCard";
