@@ -7,19 +7,11 @@ interface Props {
 
 const CountryCard = ({ country }: Props) => {
   return (
-    <div
-      style={{
-        border: "1px solid #ccc",
-        borderRadius: "8px",
-        padding: "10px",
-        margin: "10px",
-        width: "300px",
-      }}
-    >
-      <img className="mx-auto mb-4 h-auto w-20" src={country.flags.png} />
-      <div>
-        <h2>{country.name.common}</h2>
-        <p>{country.capital}</p>
+    <div className="m-2.5 h-32 w-64 rounded-lg border-none p-2.5 shadow-lg shadow-gray-200">
+      <img className="mx-auto mb-4 h-12 w-20" src={country.flags.png} />
+      <div className="flex flex-col content-center items-center">
+        <h2 className="text-lg font-bold">{country.name.common}</h2>
+        <p className="text-slate-400">{country.capital}</p>
       </div>
     </div>
   );
